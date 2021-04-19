@@ -16,7 +16,7 @@ namespace StudentKB
                 if (tryC == false || nRecord <= 0)
                 {
                     tryC = false;
-                    Console.WriteLine("Введёно не верное значение. Введите целое число больше 0.");
+                    Console.WriteLine("Введено не верное значение. Введите целое число больше 0.");
                 }
             }
             while (!tryC);
@@ -35,7 +35,7 @@ namespace StudentKB
 
                     if (!Regex.IsMatch(sn, @"^[а-яА-Я]+$"))
                     {
-                        Console.WriteLine("Введёно не верное значение. Введите слово без цифр и с заглавной буквы.");
+                        Console.WriteLine("Введено не верное значение. Введите слово без цифр и с заглавной буквы.");
                         tryC = false;
                     }
                 }
@@ -47,7 +47,7 @@ namespace StudentKB
                     fn = Console.ReadLine();
                     if (!Regex.IsMatch(fn, @"^[а-яА-Я]+$"))
                     {
-                        Console.WriteLine("Введёно не верное значение. Введите слово без цифр и с заглавной буквы.");
+                        Console.WriteLine("Введено не верное значение. Введите слово без цифр и с заглавной буквы.");
                         tryC = false;
                     }
                 }
@@ -57,10 +57,10 @@ namespace StudentKB
                     tryC = true;
                     Console.Write("[{0}] Введите номер зачётной книжки:", i);
                     tryC = Int32.TryParse(Console.ReadLine(), out nRB);
-                    if (tryC == false || nRecord <= 0)
+                    if (tryC == false || nRB <= 0)
                     {
                         tryC = false;
-                        Console.WriteLine("Введёно не верное значение. Введите целое число больше 0");
+                        Console.WriteLine("Введено не верное значение. Введите целое число больше 0");
                     }
                 }
                 while (!tryC);
