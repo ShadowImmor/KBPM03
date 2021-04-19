@@ -1,15 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Text.Json;
+using System.Text.Json.Serialization;
+using System.IO;
 
 namespace StudentKB
 {
     [Serializable]
     public class Student
     {
-        public string surname;
-        public string firstname;
-        public int numberRecordBook;
+        public string surname { get; set; }
+        public string firstname { get; set; }
+        public int numberRecordBook { get; set; }
+        public string path = "Student.txt";
         public Student() { }
         public Student(string sn, string fn, int nRB)
         {
@@ -54,6 +58,15 @@ namespace StudentKB
             for(int i = 0; i < nRecord; i++)
             {
                 Console.WriteLine("Фамилия:{0},Имя:{1},Номер зачётной книжки:{2}", st[i].surname, st[i].firstname, st[i].numberRecordBook);
+            }
+        }
+        public static void outInToFiles(Student[] st, int nRecord)
+        {
+            string strf;
+            for (int i = 0; i < nRecord; i++)
+            {
+                strf = "surname:" + st[i].surname + ", firstname:" + st[i].firstname + ", numberRecordBook:" + st[i].numberRecordBook+"\n";
+                File.AppendAllText(@"..\..\..\Student.txt", strf);
             }
         }
     }

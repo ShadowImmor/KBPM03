@@ -30,10 +30,10 @@ namespace StudentKB
                 do
                 {
                     tryC = true;
-                    Console.Write("Введите Фамилию:");
+                    Console.Write("[{0}] Введите Фамилию:",i);
                     sn = Console.ReadLine();
 
-                    if (!Regex.IsMatch(sn, @"^[a-zA-Z]+$"))
+                    if (!Regex.IsMatch(sn, @"^[а-яА-Я]+$"))
                     {
                         Console.WriteLine("Введёно не верное значение. Введите слово без цифр и с заглавной буквы.");
                         tryC = false;
@@ -43,9 +43,9 @@ namespace StudentKB
                 do
                 {
                     tryC = true;
-                    Console.Write("Введите Имя:");
+                    Console.Write("[{0}] Введите Имя:",i);
                     fn = Console.ReadLine();
-                    if (!Regex.IsMatch(fn, @"^[a-zA-Z]+$"))
+                    if (!Regex.IsMatch(fn, @"^[а-яА-Я]+$"))
                     {
                         Console.WriteLine("Введёно не верное значение. Введите слово без цифр и с заглавной буквы.");
                         tryC = false;
@@ -55,7 +55,7 @@ namespace StudentKB
                 do
                 {
                     tryC = true;
-                    Console.Write("Введите номер зачётной книжки:");
+                    Console.Write("[{0}] Введите номер зачётной книжки:", i);
                     tryC = Int32.TryParse(Console.ReadLine(), out nRB);
                     if (tryC == false || nRecord <= 0)
                     {
@@ -71,6 +71,7 @@ namespace StudentKB
             Student.sortUpSF(st, nRecord);
             Console.WriteLine("");
             Student.cout(st, nRecord);
+            Student.outInToFiles(st,nRecord);
         }
     }
 }
