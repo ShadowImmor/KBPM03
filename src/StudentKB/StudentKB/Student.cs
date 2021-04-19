@@ -4,12 +4,12 @@ using System.Text;
 
 namespace StudentKB
 {
-    class Student
+    public class Student
     {
-        string surname;
-        string firstname;
-        int numberRecordBook;
-        Student(string sn, string fn, int nRB)
+        public string surname;
+        public string firstname;
+        public int numberRecordBook;
+        public Student(string sn, string fn, int nRB)
         {
             this.surname = sn;
             this.firstname = fn;
