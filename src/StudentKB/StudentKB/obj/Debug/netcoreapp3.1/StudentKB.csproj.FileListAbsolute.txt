@@ -1,0 +1,13 @@
+D:\Users\stu-pksp117\source\KB_PM03\src\StudentKB\StudentKB\obj\Debug\netcoreapp3.1\StudentKB.csprojAssemblyReference.cache
+D:\Users\stu-pksp117\source\KB_PM03\src\StudentKB\StudentKB\obj\Debug\netcoreapp3.1\StudentKB.AssemblyInfoInputs.cache
+D:\Users\stu-pksp117\source\KB_PM03\src\StudentKB\StudentKB\obj\Debug\netcoreapp3.1\StudentKB.AssemblyInfo.cs
+D:\Users\stu-pksp117\source\KB_PM03\src\StudentKB\StudentKB\obj\Debug\netcoreapp3.1\StudentKB.csproj.CoreCompileInputs.cache
+D:\Users\stu-pksp117\source\KB_PM03\src\StudentKB\StudentKB\bin\Debug\netcoreapp3.1\StudentKB.exe
+D:\Users\stu-pksp117\source\KB_PM03\src\StudentKB\StudentKB\bin\Debug\netcoreapp3.1\StudentKB.deps.json
+D:\Users\stu-pksp117\source\KB_PM03\src\StudentKB\StudentKB\bin\Debug\netcoreapp3.1\StudentKB.runtimeconfig.json
+D:\Users\stu-pksp117\source\KB_PM03\src\StudentKB\StudentKB\bin\Debug\netcoreapp3.1\StudentKB.runtimeconfig.dev.json
+D:\Users\stu-pksp117\source\KB_PM03\src\StudentKB\StudentKB\bin\Debug\netcoreapp3.1\StudentKB.dll
+D:\Users\stu-pksp117\source\KB_PM03\src\StudentKB\StudentKB\bin\Debug\netcoreapp3.1\StudentKB.pdb
+D:\Users\stu-pksp117\source\KB_PM03\src\StudentKB\StudentKB\obj\Debug\netcoreapp3.1\StudentKB.dll
+D:\Users\stu-pksp117\source\KB_PM03\src\StudentKB\StudentKB\obj\Debug\netcoreapp3.1\StudentKB.pdb
+D:\Users\stu-pksp117\source\KB_PM03\src\StudentKB\StudentKB\obj\Debug\netcoreapp3.1\StudentKB.genruntimeconfig.cache

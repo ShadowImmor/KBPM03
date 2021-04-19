@@ -53,7 +53,7 @@ namespace StudentKB
         {
             for(int i = 0; i < nRecord; i++)
             {
-                Console.WriteLine("Фамилия:{0},Имя:{1},Номер зачётной книжки:{2}", [i].surname, st[i].firstname, st[i].numberRecordBook);
+                Console.WriteLine("Фамилия:{0},Имя:{1},Номер зачётной книжки:{2}", st[i].surname, st[i].firstname, st[i].numberRecordBook);
             }
         }
     }

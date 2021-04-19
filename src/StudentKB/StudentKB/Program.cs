@@ -16,56 +16,55 @@ namespace StudentKB
                 if (tryC == false || nRecord <= 0)
                 {
                     tryC = false;
-                    Console.Write("Введёно не верное значение. Введите целое число больше 0.");
+                    Console.WriteLine("Введёно не верное значение. Введите целое число больше 0.");
                 }
             }
             while (!tryC);
             Student[] st = new Student[nRecord];
-            string sn, fn;
+            string sn="", fn="";
             int nRB;
+
             for (int i=0; i < nRecord; i++)
             {
+                
                 do
                 {
+                    tryC = true;
                     Console.Write("Введите Фамилию:");
                     sn = Console.ReadLine();
-                    
-                    if (Regex.IsMatch(sn, @"^[a-zA-Z]+$"))
+
+                    if (!Regex.IsMatch(sn, @"^[a-zA-Z]+$"))
                     {
-                        Console.Write("Введёно не верное значение. Введите слово без цифр и с заглавной буквы.");
+                        Console.WriteLine("Введёно не верное значение. Введите слово без цифр и с заглавной буквы.");
                         tryC = false;
                     }
                 }
                 while (!tryC);
-                st[i].surname = sn;
-
                 do
                 {
+                    tryC = true;
                     Console.Write("Введите Имя:");
                     fn = Console.ReadLine();
-
-
-                    if (Regex.IsMatch(sn, @"^[a-zA-Z]+$"))
+                    if (!Regex.IsMatch(fn, @"^[a-zA-Z]+$"))
                     {
-                        Console.Write("Введёно не верное значение. Введите слово без цифр и с заглавной буквы.");
+                        Console.WriteLine("Введёно не верное значение. Введите слово без цифр и с заглавной буквы.");
                         tryC = false;
                     }
                 }
                 while (!tryC);
-                st[i].firstname = fn;
-
                 do
                 {
+                    tryC = true;
                     Console.Write("Введите номер зачётной книжки:");
                     tryC = Int32.TryParse(Console.ReadLine(), out nRB);
                     if (tryC == false || nRecord <= 0)
                     {
                         tryC = false;
-                        Console.Write("Введёно не верное значение. Введите целое число больше 0");
+                        Console.WriteLine("Введёно не верное значение. Введите целое число больше 0");
                     }
                 }
                 while (!tryC);
-                st[i].numberRecordBook = nRB;
+                st[i] = new Student(sn, fn, nRB);
             }
 
             Student.cout(st, nRecord);
