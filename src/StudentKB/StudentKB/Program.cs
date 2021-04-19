@@ -68,6 +68,10 @@ namespace StudentKB
                 st[i].numberRecordBook = nRB;
             }
 
+            Student.cout(st, nRecord);
+            Student.sortUpSF(st, nRecord);
+            Console.WriteLine("");
+            Student.cout(st, nRecord);
         }
     }
 }
